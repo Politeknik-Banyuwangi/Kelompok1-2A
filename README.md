@@ -3,6 +3,13 @@
 [![Laravel](https://github.com/galangw/PBLKasir/actions/workflows/testing.yml/badge.svg)](https://github.com/galangw/PBLKasir/actions/workflows/testing.yml) [![Laravel](https://img.shields.io/github/v/release/galangw/PBLKasir)](https://github.com/galangw/PBLKasir/releases) [![Laravel](https://img.shields.io/github/commit-activity/w/galangw/PBLKasir)](https://github.com/galangw/PBLKasir/commits/main)
 
 Aplikasi SirDi adalah sebuah sistem kasir (Point of Sales) dan manajemen barang yang dibuat menggunakan framework Laravel yang terdiri Dari 2 Versi, yaitu Web dan Juga REST API
+
+## Kelompok 1 Kelas 2A
+1. Galang Wijaya
+2. Galih Titis Bagus Catry
+3. Aza Faiz
+4. Tio Ramadhani
+5. Rafa Putra 
 ## Fitur
 1. Autentikasi User
 - Login Dan Logout User 
