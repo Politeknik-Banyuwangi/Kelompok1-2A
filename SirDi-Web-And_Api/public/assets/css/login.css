@@ -1,0 +1,36 @@
+body{
+    font-family: 'Poppins';
+}
+.card-header {
+font-weight: bold;
+    margin-bottom: 0;
+    background-color: white;
+}
+.form-control{
+
+    border-top: 0px;
+    border-left: 0ch;
+    border-right: 0ch;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.btn-primary{
+background-color: #3F0071;
+font-size: 14px;
+border-radius: 30px;
+}
+.btn-primary:hover{
+background-color: #2c0050;
+}
+.form-check-input{
+    scale: 0.8;
+}
+
+.bg-dark {
+    background-color: #fff!important;
+}
+.navbar-light .navbar-brand{
+    color:#3F0071;
+    font-weight: bold;
+}
+

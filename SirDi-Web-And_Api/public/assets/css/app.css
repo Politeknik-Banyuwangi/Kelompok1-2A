@@ -1,0 +1,229 @@
+
+:root {
+    --header-height: 2.5rem;
+    --nav-width: 68px;
+    --first-color: #3F0071;
+    --first-color-light: rgb(255, 255, 255);
+    --white-color: rgb(255, 255, 255);
+    --body-font:  'Poppins', sans-serif;
+    --normal-font-size: 14px;
+    --z-fixed: 100;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    margin: var(--header-height) 0 0 0;
+    padding: 0 1rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: 0.5s;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: var(--white-color);
+    z-index: var(--z-fixed);
+    transition: 0.5s;
+}
+.header_toggle {
+    color: var(--first-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.header_img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header_img img {
+    width: 40px;
+}
+.l-navbar {
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: var(--nav-width);
+    height: 100vh;
+    background-color: var(--first-color);
+    padding: 0.5rem 1rem 0 0;
+    transition: 0.5s;
+    z-index: var(--z-fixed);
+}
+.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.nav_logo,
+.nav_link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.nav_logo {
+    margin-bottom: 2rem;
+}
+.nav_logo-icon {
+    font-size: 1.25rem;
+    color: var(--white-color);
+}
+.nav_logo-name {
+    color: var(--white-color);
+    font-weight: 700;
+}
+.nav_link {
+    position: relative;
+    color: var(--first-color-light);
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+}
+.nav_link:hover {
+    color: var(--white-color);
+}
+.nav_icon {
+    font-size: 1.25rem;
+}
+.show {
+    left: 0;
+}
+.body-pd {
+    padding-left: calc(var(--nav-width) + 1rem);
+}
+.active {
+    color: var(--white-color);
+}
+.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 32px;
+    background-color: var(--white-color);
+}
+.height-100 {
+    height: 100vh;
+}
+@media screen and (min-width: 768px) {
+    body {
+        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        padding-left: calc(var(--nav-width) + 2rem);
+    }
+    .header {
+        height: calc(var(--header-height) + 1rem);
+        padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+    }
+    .header_img {
+        width: 30px;
+        height: 30px;
+    }
+    .header_img img {
+        width: 30px;
+    }
+    .l-navbar {
+        left: 0;
+        padding: 1rem 1rem 0 0;
+    }
+    .show {
+        width: calc(var(--nav-width) + 156px);
+    }
+    .body-pd {
+        padding-left: calc(var(--nav-width) + 188px);
+    }
+}
+.bg-white{
+    background-color: #fff;
+}
+.btn{
+    border-radius: 0px;
+    border: 0;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.form-control{
+
+    border-top: 0px;
+    border-left: 0ch;
+    border-right: 0ch;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.btn-galang{
+    background-color: #3F0071;
+    color: #fff;
+}
+.btn-galang:hover{
+    background-color: #ffffff;
+    color: #3F0071;
+    border: 1px solid #3F0071;
+    font-weight: bold;
+}
+.btn-danger{
+    background-color: transparent;
+    color: #3F0071;
+    border: 1px solid #3F0071;
+}
+.btn-danger:hover{
+    background-color: #3F0071;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(33, 33, 33);
+    opacity: 0.5; /* Firefox */
+    font-size: 14px;
+}
+
+
+
+.card-dash a{
+    background-color: transparent;
+    color: #fff;
+}
+.card-dash:hover a{
+    background-color: transparent;
+    color: #3F0071;
+}
+.card{
+    border: 3px solid #3F0071;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-link i{
+    font-size: 50px;
+    color: #3F0071;
+}
+.icon-link a{
+    font-size: 14px;
+    color: #3F0071;
+    font-weight: bold;
+    margin: 1px;
+}
